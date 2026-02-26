@@ -12,7 +12,7 @@ function App() {
         <div className="flex items-center gap-3">
           <img src={logo} alt="Logo ESBO" className="w-20 h-auto" />
           <h1 className="text-3xl font-bold text-institucional-dorado tracking-wide">
-            SIGESBO
+            ESBO
           </h1>
         </div>
         <button className="bg-institucional-dorado text-white px-6 py-2 rounded-sm font-semibold hover:bg-[#a3823a] transition-colors shadow-sm text-sm">

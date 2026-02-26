@@ -7,9 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Este es el dorado/mostaza de tu imagen
+        // colores personalizados para la marca institucional
         'institucional-dorado': '#c29b47', 
-        // Un blanco hueso para fondos suaves
+        // color blanco para el fondo de la marca institucional
         'institucional-claro': '#fdfaf5',
       }
     },
