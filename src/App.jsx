@@ -7,15 +7,15 @@ function App() {
   return (
     <div className="min-h-screen bg-institucional-claro font-sans flex flex-col relative">
       
-      {/* 1. Header */}
-      <header className="flex justify-between items-center py-4 px-8 bg-white shadow-sm relative z-20">
-        <div className="flex items-center gap-3">
-          <img src={logo} alt="Logo ESBO" className="w-20 h-auto" />
-          <h1 className="text-3xl font-bold text-institucional-dorado tracking-wide">
-            ESBO
+      {/* 1. Header ( Barra de Navegación Superior ) */}
+      <header className="flex justify-between items-center py-4 px-4 sm:px-8 bg-white shadow-sm relative z-20"> {/* Ajuste de padding lateral en móvil */}
+        <div className="flex items-center gap-2 sm:gap-3"> {/* Agrupados logo y texto con gap adaptable */}
+          <img src={logo} alt="Logo ESBO" className="w-16 sm:w-20 h-auto" /> {/* Logo ligeramente más pequeño en móvil */}
+          <h1 className="text-2xl sm:text-3xl font-bold text-institucional-dorado tracking-wide"> {/* Texto más pequeño en móvil */}
+            SIGESBO
           </h1>
         </div>
-        <button className="bg-institucional-dorado text-white px-6 py-2 rounded-sm font-semibold hover:bg-[#a3823a] transition-colors shadow-sm text-sm">
+        <button className="bg-institucional-dorado text-white px-4 sm:px-6 py-2 rounded-sm font-semibold hover:bg-[#a3823a] transition-colors shadow-sm text-xs sm:text-sm"> {/* Botón con padding y texto adaptable */}
           Acceso Estudiantes / Staff
         </button>
       </header>
@@ -37,14 +37,13 @@ function App() {
         </div>
       </section>
 
-      {/* 3. Sección de Íconos (¡Ahora mucho más limpio!) */}
+      {/* 3. Sección de Íconos */}
       <section className="bg-white py-12 px-8 shadow-sm border-t border-gray-100 z-10 flex-grow">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
           
           {/* Ícono 1: Repositorio */}
           <div className="flex flex-col items-center text-center flex-1">
             <div className="text-institucional-dorado mb-4">
-              {/* Usamos el componente BookOpen */}
               <BookOpen size={50} strokeWidth={1.5} />
             </div>
             <p className="font-bold text-gray-800 text-lg">Repositorio Académico</p>
@@ -55,7 +54,6 @@ function App() {
           {/* Ícono 2: Convenios */}
           <div className="flex flex-col items-center text-center flex-1">
             <div className="text-institucional-dorado mb-4">
-              {/* Usamos el componente Globe */}
               <Globe size={50} strokeWidth={1.5} />
             </div>
             <p className="font-bold text-gray-800 text-lg">Convenios Internacionales</p>
@@ -66,7 +64,6 @@ function App() {
           {/* Ícono 3: Validación */}
           <div className="flex flex-col items-center text-center flex-1">
             <div className="text-institucional-dorado mb-4">
-              {/* Usamos el componente Award */}
               <Award size={50} strokeWidth={1.5} />
             </div>
             <p className="font-bold text-gray-800 text-lg">Validación de Certificados</p>
@@ -76,11 +73,11 @@ function App() {
       </section>
 
       {/* 4. Footer y Buscador */}
-      <footer className="bg-institucional-dorado py-3 px-8 flex justify-center items-center gap-6">
-        <button className="text-white font-medium hover:underline flex items-center gap-2">
+      <footer className="bg-institucional-dorado pt-3 pb-20 px-4 sm:px-8 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6"> {/* Disposición en columna en móvil y margen inferior extra */}
+        <button className="text-white font-medium hover:underline flex items-center gap-2 text-sm sm:text-base">
           <Info size={18} /> Preguntas Frecuentes (FAQ Clínica)
         </button>
-        <div className="bg-white rounded px-3 py-1 flex items-center gap-2 text-sm w-48 shadow-inner">
+        <div className="bg-white rounded px-3 py-1 flex items-center gap-2 text-sm w-full max-w-xs sm:w-48 shadow-inner"> {/* Barra de búsqueda adaptable en ancho */}
           <Search size={16} className="text-gray-400" />
           <input type="text" placeholder="Search" className="outline-none text-gray-700 w-full" />
         </div>
