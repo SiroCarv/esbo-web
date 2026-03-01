@@ -12,7 +12,7 @@ function App() {
         <div className="flex items-center gap-2 sm:gap-3"> {/* Agrupados logo y texto con gap adaptable */}
           <img src={logo} alt="Logo ESBO" className="w-16 sm:w-20 h-auto" /> {/* Logo ligeramente más pequeño en móvil */}
           <h1 className="text-2xl sm:text-3xl font-bold text-institucional-dorado tracking-wide"> {/* Texto más pequeño en móvil */}
-            SIGESBO
+            ESBO
           </h1>
         </div>
         <button className="bg-institucional-dorado text-white px-4 sm:px-6 py-2 rounded-sm font-semibold hover:bg-[#a3823a] transition-colors shadow-sm text-xs sm:text-sm"> {/* Botón con padding y texto adaptable */}
